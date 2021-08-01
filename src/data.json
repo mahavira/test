@@ -1,0 +1,90 @@
+[
+  {
+    "type": "text",
+    "name": "question1"
+  },
+  {
+    "type": "checkbox",
+    "name": "question2",
+    "visibleIf": "{question1} = 123",
+    "choices": ["item1", "item2", "item3"]
+  },
+  {
+    "type": "radiogroup",
+    "name": "question3",
+    "choices": ["item1", "item2", "item3"]
+  },
+  {
+    "type": "dropdown",
+    "name": "question4",
+    "choices": ["item1", "item2", "item3"]
+  },
+  {
+    "type": "comment",
+    "name": "question5"
+  },
+  {
+    "type": "rating",
+    "name": "question6"
+  },
+  {
+    "type": "ranking",
+    "name": "question7",
+    "choices": ["item1", "item2", "item3"]
+  },
+  {
+    "type": "boolean",
+    "name": "question8"
+  },
+  {
+    "type": "matrix",
+    "name": "question9",
+    "columns": ["Column 1", "Column 2", "Column 3"],
+    "rows": ["Row 1", "Row 2"]
+  },
+  {
+    "type": "matrixdropdown",
+    "name": "question10",
+    "columns": [
+      {
+        "name": "Column 1"
+      },
+      {
+        "name": "Column 2"
+      },
+      {
+        "name": "Column 3"
+      }
+    ],
+    "choices": [1, 2, 3, 4, 5],
+    "rows": ["Row 1", "Row 2"]
+  },
+  {
+    "type": "matrixdynamic",
+    "name": "question11",
+    "columns": [
+      {
+        "name": "Column 1"
+      },
+      {
+        "name": "Column 2"
+      },
+      {
+        "name": "Column 3"
+      }
+    ],
+    "choices": [1, 2, 3, 4, 5]
+  },
+  {
+    "type": "multipletext",
+    "name": "question12",
+    "items": [
+      {
+        "name": "text1"
+      },
+      {
+        "name": "text2"
+      }
+    ]
+  }
+]
