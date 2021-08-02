@@ -1,8 +1,23 @@
 import React from "react";
-import { Checkbox } from "antd";
+import { Form, Checkbox, Space } from "antd";
 import { IQuestion } from "../types";
+import Title from "./Title";
 
-const QuestionCheckbox: React.FC<IQuestion> = (props) => {
-  return <Checkbox.Group options={props.choices as string[]}></Checkbox.Group>;
+const QuestionRadio: React.FC<IQuestion> = (props) => {
+  const { index, choices } = props;
+
+  return (
+    <Form.Item
+      key={index}
+      name={`Q${index}`}
+      label={<Title {...props} />}
+    >
+      <Checkbox.Group style={{paddingLeft: 40}}>
+        <Space direction="vertical">
+          {choices?.map((item => <Checkbox key={item} value={item}>{item}</Checkbox>))}
+        </Space>
+      </Checkbox.Group>
+    </Form.Item>
+  );
 };
-export default QuestionCheckbox;
+export default QuestionRadio;

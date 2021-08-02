@@ -1,35 +1,23 @@
 [
   {
     "type": "text",
-    "name": "question1"
+    "name": "您的年龄？"
   },
   {
     "type": "checkbox",
     "name": "question2",
     "visibleIf": "{question1} = 123",
-    "choices": [
-      "item1",
-      "item2",
-      "item3"
-    ]
+    "choices": ["item1", "item2", "item3"]
   },
   {
     "type": "radiogroup",
     "name": "question3",
-    "choices": [
-      "item1",
-      "item2",
-      "item3"
-    ]
+    "choices": ["item1", "item2", "item3"]
   },
   {
     "type": "dropdown",
     "name": "question4",
-    "choices": [
-      "item1",
-      "item2",
-      "item3"
-    ]
+    "choices": ["item1", "item2", "item3"]
   },
   {
     "type": "comment",
@@ -42,11 +30,7 @@
   {
     "type": "ranking",
     "name": "question7",
-    "choices": [
-      "item1",
-      "item2",
-      "item3"
-    ]
+    "choices": ["item1", "item2", "item3"]
   },
   {
     "type": "boolean",
@@ -55,15 +39,8 @@
   {
     "type": "matrix",
     "name": "question9",
-    "columns": [
-      "Column 1",
-      "Column 2",
-      "Column 3"
-    ],
-    "rows": [
-      "Row 1",
-      "Row 2"
-    ]
+    "columns": ["Column 1", "Column 2", "Column 3"],
+    "rows": ["Row 1", "Row 2"]
   },
   {
     "type": "matrixdropdown",
@@ -78,19 +55,10 @@
         "cellType": "boolean"
       }
     ],
-    "choices": [
-      1,
-      2,
-      3,
-      4,
-      5
-    ],
+    "choices": [1, 2, 3, 4, 5],
     "optionsCaption": "xxxx",
     "cellType": "boolean",
-    "rows": [
-      "Row 1",
-      "Row 2"
-    ]
+    "rows": ["Row 1", "Row 2"]
   },
   {
     "type": "matrixdynamic",
@@ -106,13 +74,7 @@
         "name": "Column 3"
       }
     ],
-    "choices": [
-      1,
-      2,
-      3,
-      4,
-      5
-    ]
+    "choices": [1, 2, 3, 4, 5]
   },
   {
     "type": "multipletext",

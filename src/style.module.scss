@@ -1,10 +1,35 @@
-.form {
-  h3 {
-    span {
-      background: #f00;
-    }
+.title {
+  display: flex;
+  .num {
+    width: 30px;
+    height: 30px;
+    background: #ffffff;
+    border-radius: 50%;
+    line-height: 30px;
+
+    font-family: Arial-BoldMT;
+    font-size: 17px;
+    color: #4a4a4a;
+    text-align: center;
+    font-weight: 700;
+    margin-right: 10px;
+  }
+  .text {
+    font-size: 15px;
+    color: #4a4a4a;
+    font-weight: 400;
+    line-height: 30px;
   }
 }
+
 .footer {
   margin: 0;
+  text-align: center;
+}
+:global(.ant-form-item-label
+    > label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before) {
+  position: absolute;
+  left: 21px;
+  top: 0;
+  font-size: 12px;
 }

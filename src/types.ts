@@ -14,6 +14,7 @@ export enum QuestionTypeEnum {
 }
 
 export interface IQuestion {
+  index: number;
   type: QuestionTypeEnum;
   name: string;
   visibleIf?: string;

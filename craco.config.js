@@ -5,9 +5,10 @@ module.exports = {
       plugin: CracoAntDesignPlugin,
       options: {
         customizeTheme: {
-          // '@primary-color': '#61dafb',
+          '@primary-color': '#3DB17A',
           // 'link-color': '#1DA57A',
-          // 'border-radius-base': '4px',
+          'border-radius-base': '5px',
+          'border-color-base': 'transparent'
         },
       },
     },

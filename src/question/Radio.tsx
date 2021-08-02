@@ -1,8 +1,23 @@
 import React from "react";
-import { Radio } from "antd";
+import { Form, Radio, Space } from "antd";
 import { IQuestion } from "../types";
+import Title from "./Title";
 
 const QuestionRadio: React.FC<IQuestion> = (props) => {
-  return <Radio.Group options={props.choices as string[]}></Radio.Group>;
+  const { index, choices } = props;
+
+  return (
+    <Form.Item
+      key={index}
+      name={`Q${index}`}
+      label={<Title {...props} />}
+    >
+      <Radio.Group style={{paddingLeft: 40}}>
+        <Space direction="vertical">
+          {choices?.map((item => <Radio key={item} value={item}>{item}</Radio>))}
+        </Space>
+      </Radio.Group>
+    </Form.Item>
+  );
 };
 export default QuestionRadio;
